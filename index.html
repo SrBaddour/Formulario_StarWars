@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="/assets/index.css">
+    <title>Formulario y Validacion</title>
+</head>
+<body>
+    <main>
+        
+        <form action="" class="formulario" id="formulario">
+            <!--Grupo: Usuario-->
+             <div class="formulario__grupo" id="grupo__usuario">
+                 <label for="usuario" class="formulario__label" id="usuario">Usuario</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="Escribir usuario">
+                    
+                    <i class="formulario__validacion-estado fab fa-old-republic"></i>
+                </div>
+                <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 digitos y solo puede contener numeros, letras y guion bajo</p>
+             </div>
+             <!--Grupo: Nombre-->
+             <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label" id="usuario">Nombre</label>
+               <div class="formulario__grupo-input">
+                   <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Escribir nombre">
+                   
+                   <i class="formulario__validacion-estado fab fa-old-republic"></i>
+               </div>
+               <p class="formulario__input-error">Debe introducir su nombre</p>
+            </div>
+            <!--Grupo: contraseña-->
+            <div class="formulario__grupo" id="grupo__contraseña">
+                <label for="contraseña" class="formulario__label" >Contraseña</label>
+               <div class="formulario__grupo-input">
+                   <input type="password" class="formulario__input" name="contraseña" id="contraseña" placeholder="">
+                   
+                   <i class="formulario__validacion-estado fab fa-old-republic"></i>
+               </div>
+               <p class="formulario__input-error">La contraseña tiene que ser 4 de a 12 digitos</p>
+            </div>
+            <!--Grupo: contraseña2-->
+            <div class="formulario__grupo" id="grupo__contraseña2">
+                <label for="contraseña2" class="formulario__label">Confirmar Contraseña</label>
+               <div class="formulario__grupo-input">
+                   <input type="password" class="formulario__input" name="contraseña2" id="contraseña2" placeholder="Confirmar Contraseña">
+                   
+                   <i class="formulario__validacion-estado fab fa-old-republic"></i>
+               </div>
+               <p class="formulario__input-error">Ambas contraseñas deben ser iguales</p>
+            </div>
+            <!--Grupo: correo electronico-->
+            <div class="formulario__grupo" id="grupo__correo">
+                <label for="correo" class="formulario__label" id="correo">Correo</label>
+               <div class="formulario__grupo-input">
+                   <input type="email" class="formulario__input" name="correo" id="correo" placeholder="Correo@correo.com">
+                   
+                   <i class="formulario__validacion-estado fab fa-old-republic"></i>
+               </div>
+               <p class="formulario__input-error">El correo solo puede obtener letras, nunmeros, puntos, guiones y guion bajo</p>
+            </div>
+            <!--Grupo: telefono-->
+            <div class="formulario__grupo" id="grupo__telefono">
+                <label for="telefono" class="formulario__label" id="telefono">Telefono</label>
+               <div class="formulario__grupo-input">
+                   <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="Escribir telefono">
+                   
+                   <i class="formulario__validacion-estado fab fa-old-republic"></i>
+               </div>
+               <p class="formulario__input-error">El telefono tiene que ser de 8 digitos mas codigo de area</p>
+            </div>
+            <!--Grupo: Terminos y condiciones-->
+            <div class="formulario__grupo formulario__grupo-terminos" id="grupo__terminos">
+                <label class="formulario__label">
+                    <input type="checkbox" name="terminos" class="formulario__checkbox" id="terminos">
+                    <i class="fas fa-journal-whills"></i>
+                    Acepto los terminos y condiciones
+                </label>
+            </div>
+            <div class="formulario__mensaje" id="formulario__mensaje">
+                <p><i class="fab fa-galactic-republic"></i> <b>Error:</b> Porfavor rellene el formulario correctamente</p>
+            </div>
+
+            <div class="formulario__grupo formulario__grupo-btn">
+                <button type="submit" class="formulario__btn"><i class="fas fa-jedi"></i> Enviar</button>
+                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente</p>
+            </div>
+            
+
+        </form>
+
+        
+
+    </main>
+
+
+
+    <script src="/assets/index.js"></script>
+    <script src="https://kit.fontawesome.com/1bf55634a1.js" crossorigin="anonymous"></script>
+</body>
+</html>
